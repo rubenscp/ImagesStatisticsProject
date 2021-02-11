@@ -70,27 +70,6 @@ def produceStatisticsByClassName(imagesClassesPath, className, statisticFilename
                                          numberOfImagesInNorthwest, numberOfImagesInSoutheast,
                                          numberOfImagesInSouthwest)
 
-    # imagesStatisticsFile = open(imagesClassesPath + statisticFilename, 'a+')
-    #
-    # # setting line to write
-    # line = str(className + ' ' \
-    #            + str(numberOfImagesInCenter) + ' ' \
-    #            + str(numberOfImagesInNorth) + ' ' \
-    #            + str(numberOfImagesInSouth) + ' ' \
-    #            + str(numberOfImagesInEast) + ' ' \
-    #            + str(numberOfImagesInWest) + ' ' \
-    #            + str(numberOfImagesInNortheast) + ' ' \
-    #            + str(numberOfImagesInNorthwest) + ' ' \
-    #            + str(numberOfImagesInSoutheast) + ' ' \
-    #            + str(numberOfImagesInSouthwest) + ' ' \
-    #            + LINE_FEED)
-    #
-    # # write line
-    # imagesStatisticsFile.write(line)
-    #
-    # # closing annotation file
-    # imagesStatisticsFile.close()
-
 
 def saveCroppedBoundingBoxAnnotationFile(imagesClassesPath, statisticFilename, className,
                                          numberOfImagesInCenter, numberOfImagesInNorth, numberOfImagesInSouth,
@@ -135,7 +114,7 @@ def countFiles(imagesClassesPath, className, position):
 # ###########################################
 if __name__ == '__main__':
     IMAGES_CLASSES_PATH = 'E:/desenvolvimento/projetos/DoctoralProjects/CropMultipleBoundingBoxesProjectImages/Block 20/20.2 White Fly Cropped Images by Classes/'
-    STATISTIC_FILENAME = '20.2 statisticsByClasses.txt'
+    STATISTIC_FILENAME = '20.2 StatisticsByClasses.txt'
 
     print('Statistics of Images')
     print('--------------------')
